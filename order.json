@@ -1,0 +1,22 @@
+{
+  "orderId": "00001",
+  "areaId": "Area001",
+  "siteList": [
+    {
+      "nodeId": "LM2",
+      "postionX": 190.33,
+      "postionY": 270.20,
+      "nodeTime": 0
+    } ,
+    {
+      "nodeId": "LM3",
+      "postionX": 190.33,
+      "postionY": 270.20,
+      "nodeTime": 12
+    }
+  ],
+  "agv_position": {
+    "agvList": ["agv001", "agv002"],
+    "startPosition": ["LM3", "LM1"]
+  }
+}

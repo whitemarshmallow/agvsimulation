@@ -1,0 +1,65 @@
+{
+    "areaId": "1",
+    "areaName": "Area001",
+    "nodeList": [
+        {
+            "nodeId": "LM1",
+            "className": "LocationMark",
+            "instanceName": "LM1",
+            "nodeLoc": {
+                "x": 0.273149,
+                "y": 0.651977
+            }
+        },
+        {
+            "nodeId": "LM2",
+            "className": "LocationMark",
+            "instanceName": "LM2",
+            "nodeLoc": {
+                "x": 0.428351,
+                "y": 0.647833
+            }
+        },
+        {
+            "nodeId": "LM3",
+            "className": "LocationMark",
+            "instanceName": "LM3",
+            "nodeLoc": {
+                "x": 0.623871,
+                "y": 0.647833
+            }
+        },
+        {
+            "nodeId": "LM4",
+            "className": "LocationMark",
+            "instanceName": "LM4",
+            "nodeLoc": {
+                "x": 0.781472,
+                "y": 0.644935
+            }
+        }
+    ],
+    "lineList": [
+        {
+            "lineId": "LM1-LM2",
+            "lineName": "LM1-LM2",
+            "lineSource": "LM1",
+            "lineTarget": "LM2",
+            "classType": "DegenerateBezier",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 1.0
+        },
+        {
+            "lineId": "LM2-LM1",
+            "lineName": "LM2-LM1",
+            "lineSource": "LM2",
+            "lineTarget": "LM1",
+            "classType": "DegenerateBezier",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 1.0
+        }
+    ],
+    "regionList": []
+}

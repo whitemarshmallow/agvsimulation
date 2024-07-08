@@ -1,0 +1,211 @@
+{
+    "areaId": "1",
+    "areaName": "Area001",
+    "nodeList": [
+        {
+            "nodeId": "715245366270016",
+            "className": "LocationMark",
+            "instanceName": "LM1",
+            "nodeLoc": {
+                "x": 0.273149,
+                "y": 0.651977
+            }
+        },
+        {
+            "nodeId": "715245366272017",
+            "className": "LocationMark",
+            "instanceName": "LM2",
+            "nodeLoc": {
+                "x": 0.428351,
+                "y": 0.647833
+            }
+        },
+        {
+            "nodeId": "715245366273018",
+            "className": "LocationMark",
+            "instanceName": "LM3",
+            "nodeLoc": {
+                "x": 0.623871,
+                "y": 0.647833
+            }
+        },
+        {
+            "nodeId": "715245366275019",
+            "className": "LocationMark",
+            "instanceName": "LM4",
+            "nodeLoc": {
+                "x": 0.781472,
+                "y": 0.644935
+            }
+        },
+        {
+            "nodeId": "715245366276020",
+            "className": "LocationMark",
+            "instanceName": "LM5",
+            "nodeLoc": {
+                "x": 0.86289,
+                "y": 0.607887
+            }
+        },
+        {
+            "nodeId": "715245366278021",
+            "className": "LocationMark",
+            "instanceName": "LM6",
+            "nodeLoc": {
+                "x": 0.9,
+                "y": 0.510672
+            }
+        },
+        {
+            "nodeId": "715245366279022",
+            "className": "LocationMark",
+            "instanceName": "LM7",
+            "nodeLoc": {
+                "x": 0.1,
+                "y": 0.75533
+            }
+        },
+        {
+            "nodeId": "715245366281023",
+            "className": "LocationMark",
+            "instanceName": "LM8",
+            "nodeLoc": {
+                "x": 0.146489,
+                "y": 0.9
+            }
+        }
+    ],
+    "lineList": [
+        {
+            "lineId": "715245366270016-715245366272017",
+            "lineName": "LM1-LM2",
+            "lineSource": "LM1",
+            "lineTarget": "LM2",
+            "classType": "DegenerateBezier",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 1.0
+        },
+        {
+            "lineId": "715245366272017-715245366270016",
+            "lineName": "LM2-LM1",
+            "lineSource": "LM2",
+            "lineTarget": "LM1",
+            "classType": "DegenerateBezier",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 1.0
+        },
+        {
+            "lineId": "715245366272017-715245366273018",
+            "lineName": "LM2-LM3",
+            "lineSource": "LM2",
+            "lineTarget": "LM3",
+            "classType": "DegenerateBezier",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 1.0
+        },
+        {
+            "lineId": "715245366273018-715245366272017",
+            "lineName": "LM3-LM2",
+            "lineSource": "LM3",
+            "lineTarget": "LM2",
+            "classType": "DegenerateBezier",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 1.0
+        },
+        {
+            "lineId": "715245366273018-715245366275019",
+            "lineName": "LM3-LM4",
+            "lineSource": "LM3",
+            "lineTarget": "LM4",
+            "classType": "DegenerateBezier",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 1.0
+        },
+        {
+            "lineId": "715245366275019-715245366273018",
+            "lineName": "LM4-LM3",
+            "lineSource": "LM4",
+            "lineTarget": "LM3",
+            "classType": "DegenerateBezier",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 1.0
+        },
+        {
+            "lineId": "715245366275019-715245366276020",
+            "lineName": "LM4-LM5",
+            "lineSource": "LM4",
+            "lineTarget": "LM5",
+            "classType": "DegenerateBezier",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 1.0
+        },
+        {
+            "lineId": "715245366276020-715245366275019",
+            "lineName": "LM5-LM4",
+            "lineSource": "LM5",
+            "lineTarget": "LM4",
+            "classType": "DegenerateBezier",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 1.0
+        },
+        {
+            "lineId": "715245366276020-715245366278021",
+            "lineName": "LM5-LM6",
+            "lineSource": "LM5",
+            "lineTarget": "LM6",
+            "classType": "DegenerateBezier",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 1.0
+        },
+        {
+            "lineId": "715245366278021-715245366276020",
+            "lineName": "LM6-LM5",
+            "lineSource": "LM6",
+            "lineTarget": "LM5",
+            "classType": "DegenerateBezier",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 1.0
+        },
+        {
+            "lineId": "715245366279022-715245366281023",
+            "lineName": "LM7-LM8",
+            "lineSource": "LM7",
+            "lineTarget": "LM8",
+            "classType": "DegenerateBezier",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 1.0
+        },
+        {
+            "lineId": "715245366281023-715245366279022",
+            "lineName": "LM8-LM7",
+            "lineSource": "LM8",
+            "lineTarget": "LM7",
+            "classType": "DegenerateBezier",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 1.0
+        },
+        {
+            "lineId": "715245366272017-715245366270016",
+            "lineName": "LM2-LM1",
+            "lineSource": "LM2",
+            "lineTarget": "LM1",
+            "classType": "DegenerateBezier",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 1.0
+        }
+    ],
+    "regionList": []
+}
