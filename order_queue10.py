@@ -11,6 +11,7 @@ from fastschedulingv3 import optimize_agv_paths
 
 #修改订单格式与前后端匹配，高新宇本地调测版本
 
+#testgit
 # 生产者函数
 def producer(order_queue, orders):
     #如果订单
