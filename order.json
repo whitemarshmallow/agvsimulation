@@ -17,6 +17,6 @@
   ],
   "agv_position": {
     "agvList": ["agv001", "agv002"],
-    "startPosition": ["LM3", "LM1"]
+    "startPosition": ["LM2", "LM1"]
   }
 }

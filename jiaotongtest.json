@@ -1,18 +1,174 @@
 [
     {
-        "orderId": "00001",
-        "areaId": "Area001",
+        "orderId": "Order-1",
+        "areaId": "Area-1",
         "missionKey": 1,
-        "agvId": "agv001",
+        "agvId": "AGV-1",
         "targetList": [
-            "LM2",
-            "LM1"
+            "Node-4",
+            "Node-2",
+            "Node-8",
+            "Node-1"
         ],
         "siteList": [
-            "LM1",
-            "LM2",
-            "LM3",
-            "LM1"
+            "Node-8",
+            "Node-4",
+            "Node-2",
+            "Node-8",
+            "Node-1"
+        ]
+    },
+    {
+        "orderId": "Order-2",
+        "areaId": "Area-2",
+        "missionKey": 1,
+        "agvId": "AGV-2",
+        "targetList": [
+            "Node-10",
+            "Node-4",
+            "Node-6",
+            "Node-6",
+            "Node-7"
+        ],
+        "siteList": [
+            "Node-2",
+            "Node-10",
+            "Node-4",
+            "Node-6",
+            "Node-7"
+        ]
+    },
+    {
+        "orderId": "Order-3",
+        "areaId": "Area-3",
+        "missionKey": 1,
+        "agvId": "AGV-3",
+        "targetList": [
+            "Node-3",
+            "Node-4"
+        ],
+        "siteList": [
+            "Node-6",
+            "Node-3",
+            "Node-4"
+        ]
+    },
+    {
+        "orderId": "Order-4",
+        "areaId": "Area-1",
+        "missionKey": 1,
+        "agvId": "AGV-4",
+        "targetList": [
+            "Node-3",
+            "Node-5"
+        ],
+        "siteList": [
+            "Node-5",
+            "Node-3",
+            "Node-5"
+        ]
+    },
+    {
+        "orderId": "Order-5",
+        "areaId": "Area-2",
+        "missionKey": 1,
+        "agvId": "AGV-2",
+        "targetList": [
+            "Node-2",
+            "Node-1",
+            "Node-9",
+            "Node-1"
+        ],
+        "siteList": [
+            "Node-2",
+            "Node-1",
+            "Node-9",
+            "Node-1"
+        ]
+    },
+    {
+        "orderId": "Order-6",
+        "areaId": "Area-2",
+        "missionKey": 1,
+        "agvId": "AGV-3",
+        "targetList": [
+            "Node-3",
+            "Node-8"
+        ],
+        "siteList": [
+            "Node-6",
+            "Node-3",
+            "Node-8"
+        ]
+    },
+    {
+        "orderId": "Order-7",
+        "areaId": "Area-3",
+        "missionKey": 1,
+        "agvId": "AGV-4",
+        "targetList": [
+            "Node-2",
+            "Node-10",
+            "Node-6",
+            "Node-10"
+        ],
+        "siteList": [
+            "Node-5",
+            "Node-2",
+            "Node-10",
+            "Node-6",
+            "Node-10"
+        ]
+    },
+    {
+        "orderId": "Order-8",
+        "areaId": "Area-1",
+        "missionKey": 1,
+        "agvId": "AGV-1",
+        "targetList": [
+            "Node-8",
+            "Node-9",
+            "Node-9"
+        ],
+        "siteList": [
+            "Node-8",
+            "Node-9"
+        ]
+    },
+    {
+        "orderId": "Order-9",
+        "areaId": "Area-1",
+        "missionKey": 1,
+        "agvId": "AGV-4",
+        "targetList": [
+            "Node-1",
+            "Node-10",
+            "Node-6"
+        ],
+        "siteList": [
+            "Node-5",
+            "Node-1",
+            "Node-10",
+            "Node-6"
+        ]
+    },
+    {
+        "orderId": "Order-10",
+        "areaId": "Area-1",
+        "missionKey": 1,
+        "agvId": "AGV-1",
+        "targetList": [
+            "Node-10",
+            "Node-6",
+            "Node-4",
+            "Node-8"
+        ],
+        "siteList": [
+            "Node-8",
+            "Node-10",
+            "Node-6",
+            "Node-4",
+            "Node-8"
         ]
     }
 ]
