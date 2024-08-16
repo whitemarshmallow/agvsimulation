@@ -12,6 +12,7 @@ from networkx import astar_path, NetworkXNoPath, NodeNotFound
 #5.3更新：订单返回一个值，如果拿取的订单和所有车都不匹配，那么把这个值保存
 #5.3.1更新，订单返回的不再是ID值，而是不能分配的整个对象
 #5.3.2更新，订单返回的是原始的订单对象，不是路径规划和任务分配的对象
+#5.3.3更新，增加check_order_is_executable()可调用的函数
 
 def optimize_agv_paths(graphdata, waybills, agv_positions):#data是拓扑图信息,waybills是订单信息，包括订单ID，在哪个区域以及要去的起始点和终点，agvposition是agv的位置
     # 创建有向图并添加边和节点
@@ -123,6 +124,41 @@ def optimize_agv_paths(graphdata, waybills, agv_positions):#data是拓扑图信�
 
     # 返回订单分配和路径规划的结果，以及未分配的完整订单对象列表
     return optimized_orders, unassigned_orders
+
+def check_order_is_executable(graphdata, order, agv_positions):
+    """
+    根据订单信息、AGV位置和图数据判断订单是否可执行。
+    :param graphdata: 包含节点和边的图数据
+    :param order: 当前订单信息，包括siteList
+    :param agv_positions: AGV位置的字典，键为AGV ID，值为位置
+    :return: 如果有AGV可以执行该订单，返回 True；否则返回 False
+    """
+    # 创建图数据
+    G = nx.DiGraph()
+    G.add_nodes_from(graphdata["nodes"])
+    for edge in graphdata["edges"]:
+        G.add_edge(edge["start"], edge["end"], weight=edge["cost"])
+
+    task_sequence = order["siteList"]  # 找到订单要从哪到哪去
+
+    # 遍历所有AGV，判断是否有AGV能执行该订单
+    for agv_start in agv_positions.values():
+        try:
+            for i in range(len(task_sequence)):
+                start = agv_start if i == 0 else task_sequence[i - 1]
+                end = task_sequence[i]
+
+                # 检查起点和终点是否存在于图中，并计算路径
+                if start not in G or end not in G:
+                    raise nx.NetworkXNoPath
+                path = nx.astar_path(G, start, end)
+                length = nx.path_weight(G, path, weight='weight')
+
+            return True  # 如果路径存在，表示订单可执行
+        except (NetworkXNoPath, nx.NodeNotFound):
+            continue  # 尝试下一个AGV
+
+    return False  # 如果所有AGV都不可达，返回 False
 
 if __name__ == '__main__':
     # with open('topo_map_data.json', 'r') as file:
